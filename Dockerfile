@@ -20,6 +20,6 @@ RUN set -vx \
  && pyenv install 2.7.13 \
  && pyenv global 2.7.13 \
  && pyenv rehash \ 
- && pip install -yr /tmp/requirements.txt
+ && pip install -r /tmp/requirements.txt
 
 
