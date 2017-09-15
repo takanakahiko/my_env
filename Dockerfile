@@ -13,6 +13,7 @@ RUN set -vx \
  && sed -i 's|//archive\.ubuntu\.com|//jp\.archive\.ubuntu\.com|g' /etc/apt/sources.list \
  && apt-get update \
  && apt-get install -y git vim make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils \
+ && sudo apt-get build-dep python-matplotlib \
  && apt-get clean \
  && git clone https://github.com/yyuu/pyenv.git ~/.pyenv \
  && pyenv install 3.6.2 \
